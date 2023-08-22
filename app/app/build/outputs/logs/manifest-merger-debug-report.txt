@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\69ee415b12564ec70670df83c9fdfa6f\support-v4-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\d1a6c7ee41fbe72753318d9586f1a513\support-media-compat-28.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\59df75d251431efe4d450d41cc6b083b\support-fragment-28.0.0\AndroidManifest.xml:17:1-22:12
@@ -29,33 +29,33 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\sonph\.gradle\cach
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\b5f1a18436322a4d6243b4d563cfece4\livedata-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\6104c576404b17797d5f42ae60105d1d\livedata-core-1.1.1\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\7c5e711cb7599bc18a19cc1df98bc8d6\runtime-1.1.1\AndroidManifest.xml:17:1-22:12
-INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:3:7-39
-		INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
-		INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:3:7-39
+		INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
+		INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:5:7-32
-		INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
-		INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:5:7-32
+		INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
+		INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:4:7-30
-		INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
-		INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:4:7-30
+		INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
+		INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.CAMERA
-ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:6:5-65
+ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:6:5-65
 	android:name
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:6:22-62
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:6:22-62
 uses-feature#android.hardware.camera2.full
-ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:7:5-66
+ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:7:19-63
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:7:19-63
 application
-ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:9:5-22:19
+ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:9:5-22:19
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\8bb2478d12c0baf5b421024800cd7dbb\versionedparcelable-28.0.0\AndroidManifest.xml:22:5-23:19
@@ -63,32 +63,32 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\sonph\.gra
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:12:9-48
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:12:9-48
 	android:icon
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:11:9-43
 activity#com.tencent.yolov8ncnn.MainActivity
-ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:14:9-21:20
+ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:14:9-21:20
 	android:screenOrientation
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:16:19-55
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:16:19-55
 	android:label
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:15:19-51
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:15:19-51
 	android:name
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:14:19-46
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:14:19-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:17:13-20:29
+ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:17:13-20:29
 action#android.intent.action.MAIN
-ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:18:17-69
+ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:18:25-66
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
-INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
+INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\69ee415b12564ec70670df83c9fdfa6f\support-v4-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\69ee415b12564ec70670df83c9fdfa6f\support-v4-28.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\d1a6c7ee41fbe72753318d9586f1a513\support-media-compat-28.0.0\AndroidManifest.xml:20:5-44
@@ -139,8 +139,8 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sonph\.gradle\
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\6104c576404b17797d5f42ae60105d1d\livedata-core-1.1.1\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\7c5e711cb7599bc18a19cc1df98bc8d6\runtime-1.1.1\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\7c5e711cb7599bc18a19cc1df98bc8d6\runtime-1.1.1\AndroidManifest.xml:20:5-44
-INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
+INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
-		ADDED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
-		INJECTED from S:\github\warehouse-helper\app\app\src\main\AndroidManifest.xml
+		INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
+		ADDED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml
+		INJECTED from S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml

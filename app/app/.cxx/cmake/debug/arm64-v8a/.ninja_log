@@ -1,19 +1,5 @@
 # ninja log v5
-10	643	714417602	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	839198156e15232e
-1	711	714417602	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	8171ebb80a4f9bd4
-16	758	714417602	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	1f241c556aabc745
-758	1357	714417603	S:/github/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	677061a065a6097c
-5	882	714422487	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	1f241c556aabc745
-882	1334	714422487	S:/github/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	677061a065a6097c
-2	725	714422712	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	1f241c556aabc745
-725	1133	714422712	S:/github/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	677061a065a6097c
-2	709	714423065	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	1f241c556aabc745
-709	1109	714423065	S:/github/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	677061a065a6097c
-2	709	714423248	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	1f241c556aabc745
-709	1125	714423249	S:/github/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	677061a065a6097c
-3	700	714423334	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	1f241c556aabc745
-701	1101	714423334	S:/github/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	677061a065a6097c
-2	719	714423722	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	1f241c556aabc745
-719	1111	714423722	S:/github/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	677061a065a6097c
-2	700	714424649	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	1f241c556aabc745
-700	1112	714424650	S:/github/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	677061a065a6097c
+5	623	714448425	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	7b75c9a0199faea4
+0	625	714448425	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	5e10ced107fc7157
+3	713	714448425	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	c522884fbd32c015
+713	1202	714448426	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	d519a8a9986078cb

@@ -1,7 +1,0 @@
-Executable : C:\Users\sonph\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
-arguments : 
--C
-S:\github\warehouse-helper\app\app\.cxx\cmake\debug\x86
-yolov8ncnn
-jvmArgs : 
-
