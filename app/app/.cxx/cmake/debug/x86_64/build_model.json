@@ -1,0 +1,70 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "S:\\github\\warehouse-helper\\app",
+      "sdkFolder": "C:\\Users\\sonph\\AppData\\Local\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "S:\\github\\warehouse-helper\\app\\app\\build\\intermediates",
+      "gradleModulePathName": ":app",
+      "moduleRootFolder": "S:\\github\\warehouse-helper\\app\\app",
+      "makeFile": "S:\\github\\warehouse-helper\\app\\app\\src\\main\\jni\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "S:\\github\\warehouse-helper\\app\\.cxx",
+      "cxxFolder": "S:\\github\\warehouse-helper\\app\\app\\.cxx",
+      "ndkFolder": "C:\\Users\\sonph\\AppData\\Local\\Android\\Sdk\\ndk\\21.3.6528147",
+      "ndkVersion": "21.3.6528147",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "debug",
+    "soFolder": "S:\\github\\warehouse-helper\\app\\app\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "S:\\github\\warehouse-helper\\app\\app\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86_64",
+  "abiPlatformVersion": 26,
+  "cxxBuildFolder": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cmake\\debug\\x86_64",
+  "jsonFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cmake\\debug\\x86_64\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug\\x86_64",
+  "objFolder": "S:\\github\\warehouse-helper\\app\\app\\build\\intermediates\\cmake\\debug\\obj\\x86_64",
+  "buildCommandFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cmake\\debug\\x86_64\\build_command.txt",
+  "buildOutputFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cmake\\debug\\x86_64\\build_output.txt",
+  "modelOutputFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cmake\\debug\\x86_64\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug\\x86_64\\CMakeLists.txt",
+    "toolchainWrapperFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug\\x86_64\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug\\x86_64\\build_generation_state.json",
+    "cacheKeyFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_key.json",
+    "compilerCacheUseFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug\\x86_64\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cmake\\debug\\x86_64\\json_generation_record.json",
+  "compileCommandsJsonFile": "S:\\github\\warehouse-helper\\app\\app\\.cxx\\cmake\\debug\\x86_64\\compile_commands.json"
+}

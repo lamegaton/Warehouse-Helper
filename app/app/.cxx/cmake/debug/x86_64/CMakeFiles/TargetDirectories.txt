@@ -1,0 +1,3 @@
+S:/github/warehouse-helper/app/app/.cxx/cmake/debug/x86_64/CMakeFiles/yolov8ncnn.dir
+S:/github/warehouse-helper/app/app/.cxx/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+S:/github/warehouse-helper/app/app/.cxx/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,10 @@
+ninja: Entering directory `S:\github\warehouse-helper\app\app\.cxx\cmake\debug\x86_64'
+[1/2] Building CXX object CMakeFiles/yolov8ncnn.dir/yolo.cpp.o
+S:/github/warehouse-helper/app/app/src/main/jni/yolo.cpp:249:38: warning: data argument not used by format string [-Wformat-extra-args]
+    sprintf(parampath, "best.param", modeltype);
+                       ~~~~~~~~~~~~  ^
+S:/github/warehouse-helper/app/app/src/main/jni/yolo.cpp:250:36: warning: data argument not used by format string [-Wformat-extra-args]
+    sprintf(modelpath, "best.bin", modeltype);
+                       ~~~~~~~~~~  ^
+2 warnings generated.
+[2/2] Linking CXX shared library S:\github\warehouse-helper\app\app\build\intermediates\cmake\debug\obj\x86_64\libyolov8ncnn.so
