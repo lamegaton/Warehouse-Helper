@@ -10,7 +10,7 @@ Detecting CXX compiler ABI info
 Detecting CXX compiler ABI info - done
 Detecting CXX compile features
 Detecting CXX compile features - done
-Found OpenCV: S:/github/warehouse-helper/app/app/src/main/jni/opencv-mobile-4.6.0-android (found version "4.6.0") found components:  core imgproc 
+Found OpenCV: S:/github/warehouse-helper-stable/warehouse-helper/app/app/src/main/jni/opencv-mobile-4.6.0-android (found version "4.6.0") found components:  core imgproc 
 Found OpenMP_C: -fopenmp=libomp (found version "3.1") 
 Found OpenMP_CXX: -fopenmp=libomp (found version "3.1") 
 Found OpenMP: TRUE (found version "3.1")  
