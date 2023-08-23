@@ -1,3 +1,2 @@
 ninja: Entering directory `S:\github\warehouse-helper-stable\warehouse-helper\app\app\.cxx\cmake\debug\x86_64'
-[1/2] Building CXX object CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o
-[2/2] Linking CXX shared library S:\github\warehouse-helper-stable\warehouse-helper\app\app\build\intermediates\cmake\debug\obj\x86_64\libyolov8ncnn.so
+ninja: no work to do.

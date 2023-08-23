@@ -1,2 +1,2 @@
-Found OpenCV: S:/github/warehouse-helper-stable/warehouse-helper/app/app/src/main/jni/opencv-mobile-4.6.0-android (found version "4.6.0") found components:  core imgproc 
+Found OpenCV: S:/github/warehouse-helper-stable/warehouse-helper/app/app/src/main/jni/opencv-mobile-4.6.0-android (found version "4.6.0") found components:  core imgproc highgui 
 Configuring done

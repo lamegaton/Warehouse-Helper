@@ -121,16 +121,16 @@ class MyNdkCamera : public NdkCameraWindow
 public:
     virtual void on_image_render(cv::Mat& rgb) const;
     // 8/22/2023
-//    cv::Mat getLastRenderedImage() const;
+    cv::Mat getLastRenderedImage() const;
     // 8/22/2023
-//private:
-//    mutable cv::Mat lastRenderedImage;
+private:
+    mutable cv::Mat lastRenderedImage;
 };
 
-//cv::Mat MyNdkCamera::getLastRenderedImage() const
-//{
-//    return lastRenderedImage.clone();
-//}
+cv::Mat MyNdkCamera::getLastRenderedImage() const
+{
+    return lastRenderedImage.clone();
+}
 
 void MyNdkCamera::on_image_render(cv::Mat& rgb) const
 {
@@ -168,7 +168,7 @@ void MyNdkCamera::on_image_render(cv::Mat& rgb) const
     }
 
     draw_fps(rgb);
-//    rgb.copyTo(lastRenderedImage);
+    rgb.copyTo(lastRenderedImage);
 }
 
 static MyNdkCamera* g_camera = 0;
@@ -295,20 +295,20 @@ JNIEXPORT jboolean JNICALL Java_com_tencent_yolov8ncnn_Yolov8Ncnn_setOutputWindo
     return JNI_TRUE;
 }
 
-//JNIEXPORT jboolean JNICALL Java_com_tencent_yolov8ncnn_Yolov8Ncnn_takeScreenshot(JNIEnv* env, jobject thiz, jstring filepath)
-//{
-//    const char* path = env->GetStringUTFChars(filepath, 0);
-//    cv::Mat img = g_camera->getLastRenderedImage();
-//
-//    if (img.empty())
-//    {
-//        env->ReleaseStringUTFChars(filepath, path);
-//        return JNI_FALSE;
-//    }
-//
-//    bool result = cv::imwrite(path, img);
-//    env->ReleaseStringUTFChars(filepath, path);
-//    return result ? JNI_TRUE : JNI_FALSE;
-//}
+JNIEXPORT jboolean JNICALL Java_com_tencent_yolov8ncnn_Yolov8Ncnn_takeScreenshot(JNIEnv* env, jobject thiz, jstring filepath)
+{
+    const char* path = env->GetStringUTFChars(filepath, 0);
+    cv::Mat img = g_camera->getLastRenderedImage();
+
+    if (img.empty())
+    {
+        env->ReleaseStringUTFChars(filepath, path);
+        return JNI_FALSE;
+    }
+    __android_log_print(ANDROID_LOG_DEBUG, "ncnn", "takeScreenshot %s", path);
+    bool result = cv::imwrite(path, img);
+    env->ReleaseStringUTFChars(filepath, path);
+    return result ? JNI_TRUE : JNI_FALSE;
+}
 
 }

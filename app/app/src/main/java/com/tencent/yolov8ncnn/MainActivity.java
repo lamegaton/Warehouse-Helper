@@ -16,9 +16,16 @@ package com.tencent.yolov8ncnn;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.ContentValues;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.PixelFormat;
+import android.icu.text.SimpleDateFormat;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
@@ -31,6 +38,15 @@ import android.widget.Spinner;
 
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Date;
+import java.util.Locale;
 
 public class MainActivity extends Activity implements SurfaceHolder.Callback
 {
@@ -57,17 +73,52 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback
         cameraView.getHolder().setFormat(PixelFormat.RGBA_8888);
         cameraView.getHolder().addCallback(this);
 
-//        Button buttonSwitchCamera = (Button) findViewById(R.id.buttonSwitchCamera);
-//        buttonSwitchCamera.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View arg0) {
-//                //boolean success = yolov8ncnn.takeScreenshot("/image.jpg");
-//                int new_facing = 1 - facing;
-//                yolov8ncnn.closeCamera();
-//                yolov8ncnn.openCamera(new_facing);
-//                facing = new_facing;
-//            }
-//        });
+        Button buttonSwitchCamera = (Button) findViewById(R.id.buttonSwitchCamera);
+        buttonSwitchCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                    saveImageToMediaStore();
+            }
+
+            public void saveImageToMediaStore() {
+                // Get the current time and format it as a string
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault());
+                String currentTime = sdf.format(new Date());
+
+                // Temporary file location
+                File tempFile = new File(getCacheDir(), "temp_screenshot_" + currentTime + ".jpg");
+                boolean success = yolov8ncnn.takeScreenshot(tempFile.getAbsolutePath());
+
+                if (success) {
+                    ContentValues values = new ContentValues();
+                    values.put(MediaStore.Images.Media.TITLE, "screenshot_" + currentTime);
+                    values.put(MediaStore.Images.Media.DISPLAY_NAME, "screenshot_" + currentTime + ".jpg");
+                    values.put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg");
+                    values.put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + "/Pipe");
+
+                    Uri uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, values);
+
+                    try (OutputStream os = getContentResolver().openOutputStream(uri);
+                         InputStream is = new FileInputStream(tempFile)) {
+                        byte[] buffer = new byte[4 * 1024]; // 4KB
+                        int read;
+                        while ((read = is.read(buffer)) != -1) {
+                            os.write(buffer, 0, read);
+                        }
+                        os.flush();
+                        Toast.makeText(MainActivity.this, "Screenshot saved!", Toast.LENGTH_SHORT).show();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                        Toast.makeText(MainActivity.this, "Failed to save screenshot!", Toast.LENGTH_SHORT).show();
+                    }
+
+                    // Delete the temporary file
+                    tempFile.delete();
+                } else {
+                    Toast.makeText(MainActivity.this, "Failed to take screenshot!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
 
         spinnerModel = (Spinner) findViewById(R.id.spinnerModel);
         spinnerModel.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -153,4 +204,6 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback
 
         yolov8ncnn.closeCamera();
     }
+
 }
+
