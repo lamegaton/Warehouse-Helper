@@ -1,4 +1,4 @@
-#Wed Aug 23 01:09:59 EDT 2023
+#Wed Aug 23 10:06:42 EDT 2023
 base.1=S\:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
 path.1=classes.dex
 base.0=S\:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
