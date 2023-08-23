@@ -18,3 +18,7 @@
 613	1107	714466571	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	f1886eae3baac16d
 2	640	714467619	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	5e10ced107fc7157
 640	1134	714467620	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	f1886eae3baac16d
+6	1040	714506810	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	7b75c9a0199faea4
+0	1063	714506810	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	5e10ced107fc7157
+3	1150	714506810	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	c522884fbd32c015
+1150	1748	714506811	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	f1886eae3baac16d

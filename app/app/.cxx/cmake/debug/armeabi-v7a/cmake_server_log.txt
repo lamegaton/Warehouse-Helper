@@ -59,16 +59,6 @@ CMAKE SERVER:
 
 CMAKE SERVER: [== "CMake Server" ==[
 
-CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Found OpenCV: S:/github/warehouse-helper-stable/warehouse-helper/app/app/src/main/jni/opencv-mobile-4.6.0-android (found version \"4.6.0\") found components:  core imgproc highgui ","type":"message"}
-
-CMAKE SERVER: ]== "CMake Server" ==]
-
-CMAKE SERVER: Found OpenCV: S:/github/warehouse-helper-stable/warehouse-helper/app/app/src/main/jni/opencv-mobile-4.6.0-android (found version "4.6.0") found components:  core imgproc highgui 
-CMAKE SERVER: Found OpenCV: S:/github/warehouse-helper-stable/warehouse-helper/app/app/src/main/jni/opencv-mobile-4.6.0-android (found version "4.6.0") found components:  core imgproc highgui 
-CMAKE SERVER: 
-
-CMAKE SERVER: [== "CMake Server" ==[
-
 CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
 
 CMAKE SERVER: ]== "CMake Server" ==]
