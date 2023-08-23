@@ -1,5 +1,14 @@
 # ninja log v5
-5	623	714448425	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	7b75c9a0199faea4
-0	625	714448425	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	5e10ced107fc7157
-3	713	714448425	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	c522884fbd32c015
-713	1202	714448426	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	d519a8a9986078cb
+5	624	714455367	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	7b75c9a0199faea4
+0	677	714455367	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	5e10ced107fc7157
+3	761	714455367	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	c522884fbd32c015
+761	1289	714455367	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	d519a8a9986078cb
+8	611	714463118	CMakeFiles/yolov8ncnn.dir/ndkcamera.cpp.o	7b75c9a0199faea4
+3	626	714463118	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	5e10ced107fc7157
+6	713	714463118	CMakeFiles/yolov8ncnn.dir/yolo.cpp.o	c522884fbd32c015
+714	1257	714463118	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	f1886eae3baac16d
+2	712	714464862	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	5e10ced107fc7157
+712	1207	714464863	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	f1886eae3baac16d
+3	422	714464890	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	d519a8a9986078cb
+2	556	714464986	CMakeFiles/yolov8ncnn.dir/yolov8ncnn.cpp.o	5e10ced107fc7157
+556	953	714464987	S:/github/warehouse-helper-stable/warehouse-helper/app/app/build/intermediates/cmake/debug/obj/arm64-v8a/libyolov8ncnn.so	d519a8a9986078cb

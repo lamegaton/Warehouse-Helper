@@ -24,6 +24,8 @@ public class Yolov8Ncnn
     public native boolean closeCamera();
     public native boolean setOutputWindow(Surface surface);
 
+    //public native boolean takeScreenshot(String filepath);
+
     static {
         System.loadLibrary("yolov8ncnn");
     }

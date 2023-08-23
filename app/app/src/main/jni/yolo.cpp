@@ -12,6 +12,7 @@
 // CONDITIONS OF ANY KIND, either express or implied. See the License for the
 // specific language governing permissions and limitations under the License.
 
+// File: yolo.cpp
 #include "yolo.h"
 
 #include <opencv2/core/core.hpp>
@@ -33,6 +34,7 @@ static float sigmoid(float x)
 {
     return 1.0f / (1.0f + fast_exp(-x));
 }
+
 static float intersection_area(const Object& a, const Object& b)
 {
     cv::Rect_<float> inter = a.rect & b.rect;
@@ -117,6 +119,7 @@ static void nms_sorted_bboxes(const std::vector<Object>& faceobjects, std::vecto
             picked.push_back(i);
     }
 }
+
 static void generate_grids_and_stride(const int target_w, const int target_h, std::vector<int>& strides, std::vector<GridAndStride>& grid_strides)
 {
     for (int i = 0; i < (int)strides.size(); i++)
@@ -137,6 +140,7 @@ static void generate_grids_and_stride(const int target_w, const int target_h, st
         }
     }
 }
+
 static void generate_proposals(std::vector<GridAndStride> grid_strides, const ncnn::Mat& pred, float prob_threshold, std::vector<Object>& objects)
 {
     const int num_points = grid_strides.size();
@@ -223,7 +227,6 @@ Yolo::Yolo()
     blob_pool_allocator.set_size_compare_ratio(0.f);
     workspace_pool_allocator.set_size_compare_ratio(0.f);
 }
-
 
 int Yolo::load(AAssetManager* mgr, const char* modeltype, int _target_size, const float* _mean_vals, const float* _norm_vals, bool use_gpu)
 {
@@ -354,6 +357,7 @@ int Yolo::detect(const cv::Mat& rgb, std::vector<Object>& objects, float prob_th
     return 0;
 }
 
+// Draw circle on image
 int Yolo::draw(cv::Mat& rgb, const std::vector<Object>& objects)
 {
     static const char* class_names[] = {
@@ -401,7 +405,7 @@ int Yolo::draw(cv::Mat& rgb, const std::vector<Object>& objects)
         int y_center = obj.rect.y + obj.rect.height / 2;
 
         // Calculate radius based on the average of the width and height of the bounding box
-        int radius = (obj.rect.width + obj.rect.height) / 4;  // The division by 8 is arbitrary. You can adjust this for your desired circle size relative to the bounding box.
+        int radius = (obj.rect.width + obj.rect.height) / 4;  // The division by 8 is arbitrary.
 
         // Create a copy of the original image
         cv::Mat imgCopy = rgb.clone();
@@ -420,18 +424,7 @@ int Yolo::draw(cv::Mat& rgb, const std::vector<Object>& objects)
         sprintf(text, "%d", pipe_count);  // Number instead of probability
 
         int baseLine = 0;
-        // cv::Size label_size = cv::getTextSize(text, cv::FONT_HERSHEY_SIMPLEX, 0.5, 1, &baseLine);
 
-        // int x = x_center - label_size.width / 2;
-        // int y = y_center - label_size.height / 2;
-        // if (y - label_size.height - baseLine < 0) y += label_size.height + baseLine;
-        // if (x + label_size.width > rgb.cols) x = rgb.cols - label_size.width;
-
-        // cv::rectangle(rgb, cv::Rect(cv::Point(x, y - label_size.height), cv::Size(label_size.width, label_size.height + baseLine)), cc, -1);
-
-        // cv::Scalar textcc = (color[0] + color[1] + color[2] >= 381) ? cv::Scalar(0, 0, 0) : cv::Scalar(255, 255, 255);
-
-        // cv::putText(rgb, text, cv::Point(x, y), cv::FONT_HERSHEY_SIMPLEX, 0.5, textcc, 1);
                 cv::Size textSize = cv::getTextSize(text, cv::FONT_HERSHEY_SIMPLEX, 0.5, 1, &baseLine);
         
         cv::Scalar textcc = (color[0] + color[1] + color[2] >= 381) ? cv::Scalar(0, 0, 0) : cv::Scalar(255, 255, 255);
@@ -441,42 +434,4 @@ int Yolo::draw(cv::Mat& rgb, const std::vector<Object>& objects)
 
     return 0;
 
-
-//     int color_index = 0;
-
-//     for (size_t i = 0; i < objects.size(); i++)
-//     {
-//         const Object& obj = objects[i];
-
-// //         fprintf(stderr, "%d = %.5f at %.2f %.2f %.2f x %.2f\n", obj.label, obj.prob,
-// //                 obj.rect.x, obj.rect.y, obj.rect.width, obj.rect.height);
-
-//         const unsigned char* color = colors[color_index % 19];
-//         color_index++;
-
-//         cv::Scalar cc(color[0], color[1], color[2]);
-
-//         cv::rectangle(rgb, obj.rect, cc, 2);
-
-//         char text[256];
-//         sprintf(text, "%s %.1f%%", class_names[obj.label], obj.prob * 100);
-
-//         int baseLine = 0;
-//         cv::Size label_size = cv::getTextSize(text, cv::FONT_HERSHEY_SIMPLEX, 0.5, 1, &baseLine);
-
-//         int x = obj.rect.x;
-//         int y = obj.rect.y - label_size.height - baseLine;
-//         if (y < 0)
-//             y = 0;
-//         if (x + label_size.width > rgb.cols)
-//             x = rgb.cols - label_size.width;
-
-//         cv::rectangle(rgb, cv::Rect(cv::Point(x, y), cv::Size(label_size.width, label_size.height + baseLine)), cc, -1);
-
-//         cv::Scalar textcc = (color[0] + color[1] + color[2] >= 381) ? cv::Scalar(0, 0, 0) : cv::Scalar(255, 255, 255);
-
-//         cv::putText(rgb, text, cv::Point(x, y + label_size.height), cv::FONT_HERSHEY_SIMPLEX, 0.5, textcc, 1);
-//     }
-
-//     return 0;
 }

@@ -57,17 +57,17 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback
         cameraView.getHolder().setFormat(PixelFormat.RGBA_8888);
         cameraView.getHolder().addCallback(this);
 
-        Button buttonSwitchCamera = (Button) findViewById(R.id.buttonSwitchCamera);
-        buttonSwitchCamera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                int new_facing = 1 - facing;
-                yolov8ncnn.closeCamera();
-                yolov8ncnn.openCamera(new_facing);
-                facing = new_facing;
-            }
-        });
+//        Button buttonSwitchCamera = (Button) findViewById(R.id.buttonSwitchCamera);
+//        buttonSwitchCamera.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View arg0) {
+//                //boolean success = yolov8ncnn.takeScreenshot("/image.jpg");
+//                int new_facing = 1 - facing;
+//                yolov8ncnn.closeCamera();
+//                yolov8ncnn.openCamera(new_facing);
+//                facing = new_facing;
+//            }
+//        });
 
         spinnerModel = (Spinner) findViewById(R.id.spinnerModel);
         spinnerModel.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {

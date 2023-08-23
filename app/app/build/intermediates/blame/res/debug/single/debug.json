@@ -60,16 +60,16 @@
         "source": "C:\\Users\\sonph\\.gradle\\caches\\transforms-2\\files-2.1\\dd1cf78f22bdd94f550130b281f27c97\\support-compat-28.0.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_adaptive_back.png.flat",
-        "source": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_adaptive_back.png"
+        "merged": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\sonph\\.gradle\\caches\\transforms-2\\files-2.1\\dd1cf78f22bdd94f550130b281f27c97\\support-compat-28.0.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
         "merged": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_adaptive_fore.png.flat",
         "source": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_adaptive_fore.png"
     },
     {
-        "merged": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\sonph\\.gradle\\caches\\transforms-2\\files-2.1\\dd1cf78f22bdd94f550130b281f27c97\\support-compat-28.0.0\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_adaptive_back.png.flat",
+        "source": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_adaptive_back.png"
     },
     {
         "merged": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
@@ -158,6 +158,10 @@
     {
         "merged": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\sonph\\.gradle\\caches\\transforms-2\\files-2.1\\dd1cf78f22bdd94f550130b281f27c97\\support-compat-28.0.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\res\\merged\\debug\\xml_provider_paths.xml.flat",
+        "source": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\src\\main\\res\\xml\\provider_paths.xml"
     },
     {
         "merged": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",

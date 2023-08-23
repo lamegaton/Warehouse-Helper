@@ -12,6 +12,8 @@
 // CONDITIONS OF ANY KIND, either express or implied. See the License for the
 // specific language governing permissions and limitations under the License.
 
+// yolov8ncnn.cpp extension of ndk
+
 #include <android/asset_manager_jni.h>
 #include <android/native_window_jni.h>
 #include <android/native_window.h>
@@ -32,6 +34,7 @@
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui.hpp>
 
 #if __ARM_NEON
 #include <arm_neon.h>
@@ -117,7 +120,17 @@ class MyNdkCamera : public NdkCameraWindow
 {
 public:
     virtual void on_image_render(cv::Mat& rgb) const;
+    // 8/22/2023
+//    cv::Mat getLastRenderedImage() const;
+    // 8/22/2023
+//private:
+//    mutable cv::Mat lastRenderedImage;
 };
+
+//cv::Mat MyNdkCamera::getLastRenderedImage() const
+//{
+//    return lastRenderedImage.clone();
+//}
 
 void MyNdkCamera::on_image_render(cv::Mat& rgb) const
 {
@@ -130,6 +143,7 @@ void MyNdkCamera::on_image_render(cv::Mat& rgb) const
             std::vector<Object> objects;
             g_yolo->detect(rgb, objects);
             g_yolo->draw(rgb, objects);
+
             // Display total count of detected objects
             char count_text[32];
             sprintf(count_text, "Total Objects: %zu", objects.size());
@@ -140,6 +154,7 @@ void MyNdkCamera::on_image_render(cv::Mat& rgb) const
             int y = 20;
             int x = 10;
 
+            // this is for the label Total Objects
             cv::rectangle(rgb, cv::Rect(cv::Point(x, y - label_size.height), cv::Size(label_size.width, label_size.height + baseLine)),
                           cv::Scalar(255, 255, 255), -1);
 
@@ -153,6 +168,7 @@ void MyNdkCamera::on_image_render(cv::Mat& rgb) const
     }
 
     draw_fps(rgb);
+//    rgb.copyTo(lastRenderedImage);
 }
 
 static MyNdkCamera* g_camera = 0;
@@ -278,5 +294,21 @@ JNIEXPORT jboolean JNICALL Java_com_tencent_yolov8ncnn_Yolov8Ncnn_setOutputWindo
 
     return JNI_TRUE;
 }
+
+//JNIEXPORT jboolean JNICALL Java_com_tencent_yolov8ncnn_Yolov8Ncnn_takeScreenshot(JNIEnv* env, jobject thiz, jstring filepath)
+//{
+//    const char* path = env->GetStringUTFChars(filepath, 0);
+//    cv::Mat img = g_camera->getLastRenderedImage();
+//
+//    if (img.empty())
+//    {
+//        env->ReleaseStringUTFChars(filepath, path);
+//        return JNI_FALSE;
+//    }
+//
+//    bool result = cv::imwrite(path, img);
+//    env->ReleaseStringUTFChars(filepath, path);
+//    return result ? JNI_TRUE : JNI_FALSE;
+//}
 
 }

@@ -12,6 +12,8 @@
 // CONDITIONS OF ANY KIND, either express or implied. See the License for the
 // specific language governing permissions and limitations under the License.
 
+// yolo.h
+
 #ifndef YOLO_H
 #define YOLO_H
 
@@ -31,6 +33,7 @@ struct GridAndStride
     int grid1;
     int stride;
 };
+// contructor for yolo.cpp
 class Yolo
 {
 public:
