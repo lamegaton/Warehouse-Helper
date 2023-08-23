@@ -5,7 +5,6 @@
       "sdkFolder": "C:\\Users\\sonph\\AppData\\Local\\Android\\Sdk",
       "isNativeCompilerSettingsCacheEnabled": false,
       "isBuildOnlyTargetAbiEnabled": true,
-      "ideBuildTargetAbi": "x86_64,x86",
       "splitsAbiFilterSet": [],
       "intermediatesFolder": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\build\\intermediates",
       "gradleModulePathName": ":app",
@@ -40,8 +39,10 @@
     "gradleBuildOutputFolder": "S:\\github\\warehouse-helper-stable\\warehouse-helper\\app\\app\\.cxx\\cxx\\debug",
     "isDebuggableEnabled": true,
     "validAbiList": [
-      "X86_64",
-      "X86"
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
     ],
     "buildTargetSet": []
   },

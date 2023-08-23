@@ -32,28 +32,27 @@
 19-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:12:9-41
 20        android:requestLegacyExternalStorage="true"
 20-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:15:9-52
-21        android:roundIcon="@mipmap/ic_launcher"
+21        android:roundIcon="@mipmap/ic_launcher" >
 21-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:14:9-48
-22        android:testOnly="true" >
-23        <activity
-23-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:17:9-24:20
-24            android:name="com.tencent.yolov8ncnn.MainActivity"
-24-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:17:19-46
-25            android:label="@string/app_name"
-25-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:18:13-45
-26            android:screenOrientation="portrait" >
-26-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:19:13-49
-27            <intent-filter>
-27-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:20:13-23:29
-28                <action android:name="android.intent.action.MAIN" />
-28-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:21:17-69
-28-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:21:25-66
-29
-30                <category android:name="android.intent.category.LAUNCHER" />
-30-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:22:17-77
-30-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:22:27-74
-31            </intent-filter>
-32        </activity>
-33    </application>
-34
-35</manifest>
+22        <activity
+22-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:17:9-24:20
+23            android:name="com.tencent.yolov8ncnn.MainActivity"
+23-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:17:19-46
+24            android:label="@string/app_name"
+24-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:18:13-45
+25            android:screenOrientation="portrait" >
+25-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:19:13-49
+26            <intent-filter>
+26-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:20:13-23:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:21:17-69
+27-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:21:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:22:17-77
+29-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:22:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>
