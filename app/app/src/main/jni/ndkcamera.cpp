@@ -721,6 +721,8 @@ void NdkCameraWindow::on_image(const unsigned char* nv21, int nv21_width, int nv
 
     on_image_render(rgb);
 
+
+
     // rotate to native window orientation
     cv::Mat rgb_render(render_h, render_w, CV_8UC3);
     ncnn::kanna_rotate_c3(rgb.data, roi_w, roi_h, rgb_render.data, render_w, render_h, render_rotate_type);
@@ -769,3 +771,4 @@ void NdkCameraWindow::on_image(const unsigned char* nv21, int nv21_width, int nv
 
     ANativeWindow_unlockAndPost(win);
 }
+

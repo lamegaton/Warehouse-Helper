@@ -1237,4 +1237,7 @@ public final class R {
      */
     public static final int GradientColorItem_android_offset=1;
   }
+  public static final class xml {
+    public static final int provider_paths=0x7f0d0000;
+  }
 }

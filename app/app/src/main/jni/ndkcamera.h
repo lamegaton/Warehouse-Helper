@@ -12,6 +12,8 @@
 // CONDITIONS OF ANY KIND, either express or implied. See the License for the
 // specific language governing permissions and limitations under the License.
 
+// ndkcamera.h
+
 #ifndef NDKCAMERA_H
 #define NDKCAMERA_H
 
@@ -64,7 +66,6 @@ public:
     void set_window(ANativeWindow* win);
 
     virtual void on_image_render(cv::Mat& rgb) const;
-
     virtual void on_image(const unsigned char* nv21, int nv21_width, int nv21_height) const;
 
 public:
@@ -75,6 +76,7 @@ private:
     mutable ASensorEventQueue* sensor_event_queue;
     const ASensor* accelerometer_sensor;
     ANativeWindow* win;
+
 };
 
 #endif // NDKCAMERA_H

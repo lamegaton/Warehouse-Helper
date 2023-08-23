@@ -10,42 +10,49 @@
 9    <uses-permission android:name="android.permission.CAMERA" />
 9-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:6:5-65
 9-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:6:22-62
-10
-11    <uses-feature android:name="android.hardware.camera2.full" />
-11-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:7:5-66
-11-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:7:19-63
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:7:5-81
+10-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:7:22-78
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:8:5-80
+11-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:8:22-77
 12
-13    <application
-13-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:9:5-22:19
-14        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-14-->[com.android.support:support-compat:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
-15        android:debuggable="true"
-16        android:icon="@mipmap/ic_launcher"
-16-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:11:9-43
-17        android:label="@string/app_name"
-17-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:10:9-41
-18        android:roundIcon="@mipmap/ic_launcher"
-18-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:12:9-48
-19        android:testOnly="true" >
-20        <activity
-20-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:14:9-21:20
-21            android:name="com.tencent.yolov8ncnn.MainActivity"
-21-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:14:19-46
-22            android:label="@string/app_name"
-22-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:15:19-51
-23            android:screenOrientation="portrait" >
-23-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:16:19-55
-24            <intent-filter>
-24-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:17:13-20:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:18:17-69
-25-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:18:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:19:17-77
-27-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:19:27-74
-28            </intent-filter>
-29        </activity>
-30    </application>
-31
-32</manifest>
+13    <uses-feature android:name="android.hardware.camera2.full" />
+13-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:9:5-66
+13-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:9:19-63
+14
+15    <application
+15-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:11:5-25:19
+16        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+16-->[com.android.support:support-compat:28.0.0] C:\Users\sonph\.gradle\caches\transforms-2\files-2.1\dd1cf78f22bdd94f550130b281f27c97\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+17        android:debuggable="true"
+18        android:icon="@mipmap/ic_launcher"
+18-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:13:9-43
+19        android:label="@string/app_name"
+19-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:12:9-41
+20        android:requestLegacyExternalStorage="true"
+20-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:15:9-52
+21        android:roundIcon="@mipmap/ic_launcher" >
+21-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:14:9-48
+22        <activity
+22-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:17:9-24:20
+23            android:name="com.tencent.yolov8ncnn.MainActivity"
+23-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:17:19-46
+24            android:label="@string/app_name"
+24-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:18:13-45
+25            android:screenOrientation="portrait" >
+25-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:19:13-49
+26            <intent-filter>
+26-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:20:13-23:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:21:17-69
+27-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:21:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:22:17-77
+29-->S:\github\warehouse-helper-stable\warehouse-helper\app\app\src\main\AndroidManifest.xml:22:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>

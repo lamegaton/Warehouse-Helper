@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29 // for
     buildToolsVersion "29.0.2"
 
     defaultConfig {
@@ -20,5 +20,7 @@ android {
 
     dependencies {
         implementation 'com.android.support:support-v4:28.0.0'
+        //implementation 'androidx.multidex:multidex:2.0.1'
+
     }
 }
