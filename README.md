@@ -1,5 +1,5 @@
 # Warehouse-Helper-Pipe
- The aim of warehouse helper is to assist worker counting objects. The first version will be limited to count pipe ony. The next target will be boxes and other things such as clothes, and nail supplies.
+ The aim of the warehouse helper app is to assist workers counting objects. The first version will be limited to count pipe ony. The next target will be boxes and other things such as clothes, and nail supplies.
 
 -- Thanks Dad for giving me the idea 🙌.
 
@@ -15,6 +15,7 @@ Technologies:
 # Demo
 <img src="demo/warehouse_helper_poster.png" height="400">
 
+https://github.com/lamegaton/Warehouse-Helper/assets/5988492/e07e2326-8995-410d-8657-ff9eb137d048
 
 ## Screenshots
 Screenshots are save in Gallery under Pipe directory
