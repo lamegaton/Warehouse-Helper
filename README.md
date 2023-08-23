@@ -13,7 +13,7 @@ Technologies:
 **v0.0.0.1**: Count pipe, and apply takescreenshot function [Download here](https://github.com/lamegaton/warehouse-helper/releases/tag/v0.0.0.1) 
 
 # Demo
-<img src="demo/warehouse_helper_poster.png" height="400">
+<img src="demo/warehouse_helper_poster.png" height="40%">
 
 https://github.com/lamegaton/Warehouse-Helper/assets/5988492/e07e2326-8995-410d-8657-ff9eb137d048
 
