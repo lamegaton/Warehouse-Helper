@@ -15,7 +15,7 @@ Technologies:
 # Demo
 <img src="demo/warehouse_helper_poster.png" height="400">
 
-https://github.com/lamegaton/warehouse-helper/assets/5988492/c6c32595-c9a5-495b-832f-faa9405fef75
+https://github.com/lamegaton/Warehouse-Helper/assets/5988492/e07e2326-8995-410d-8657-ff9eb137d048
 
 ## Screenshots
 Screenshots are save in Gallery under Pipe directory
